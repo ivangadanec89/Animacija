@@ -1,0 +1,84 @@
+* {
+	background-color:#050210;
+	padding:0;
+	margin:0;
+}
+
+.krug {
+	width:340px;
+	height:340px;
+	border-radius:100%;
+	position:absolute;
+	top:25%;
+	left:40%;
+	background:linear-gradient(#fb5dad, #55fb9f, #b97aff);
+	animation: kruzenje 1s linear infinite;
+}
+
+@keyframes kruzenje {
+	0% {
+		transform:rotate(0deg);
+	}
+	100% {
+		transform:rotate(360deg);
+	}
+}
+
+.unutrasnji {
+	width:300px;
+	height:300px;
+	background-color:#050210;
+	border-radius:100%;
+	position:absolute;
+	top:27.6%;
+	left:41.3%;
+	animation:povecanje 1s linear infinite;
+}
+
+@keyframes povecanje {
+	0% {
+		transform:scale(0.1);
+		filter:brightness(4);
+	}
+	50%{
+		transform:scale(0.5);
+		filter:brightness(3);
+		
+	}
+	100% {
+		transform:scale(1);
+	}
+}
+
+.nepokretan {
+	width:300px;
+	height:300px;
+	background-color:#050210;
+	border-radius:100%;
+	position:absolute;
+	top:27.6%;
+	left:41.3%;
+}
+
+.spoljasnji {
+	width:340px;
+	height:340px;
+	border-radius:100%;
+	position:absolute;
+	top:25%;
+	left:40%;
+	filter:blur(60px);
+	background:linear-gradient(#fb5dad, #55fb9f, #b97aff);
+	animation: okretanje 1s linear infinite;
+}
+
+@keyframes okretanje {
+	0% {
+		transform:rotate(0deg);
+	}
+	100% {
+		transform:rotate(360deg);
+	}
+}
+
+
